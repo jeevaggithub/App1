@@ -1,0 +1,11 @@
+
+<button class="btn btn-success" (click)="onToggle()">Click Me To Toggle</button>
+
+<p  *ngIf="btnToggled">The button is toggled true</p>
+
+<div class="list" *ngFor="let item of log">
+  <p
+  [ngStyle]="{backgroundColor: item>=5 ? 'blue' : 'transparent'}"
+  [ngClass]="{textwhite:item>=5}"
+  >{{ item }}</p>
+</div>

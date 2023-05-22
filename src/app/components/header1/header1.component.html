@@ -2,9 +2,11 @@
   <div class="logoName">
     <p>Demo_logo</p>
   </div>
-  <div class="title">
-    <input type="text" [(ngModel)]="username" name="userinput" id="userinput"  >
+  <div class="title container">
+    <input type="text" [(ngModel)]="userinput" class="form-control" name="userinput" id="userinput"  >
   </div>
+  <button class="btn btn-primary" [disabled]="userinput===''" (click)="onClick()">click</button>
+
   <div class="userName">
     <p>User :{{ username }}</p>
   </div>
