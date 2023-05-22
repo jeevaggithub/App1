@@ -5,11 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header1.component.html',
   styleUrls: ['./header1.component.scss']
 })
+
 export class Header1Component implements OnInit {
+
+  username = '';
+
+  userinput = this.username;
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }
